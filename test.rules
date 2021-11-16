@@ -1,0 +1,47 @@
+alert tcp any any -> any 80 (msg:"gilgil.net access"; content:"GET /"; content:"Host: "; content:"gilgil.net"; fast_pattern; sid:10001; rev:1;)
+
+alert tcp any any -> any 80 (msg:"netflix.com access"; content:"GET /"; content:"Host: "; content:"netflix.com"; fast_pattern; sid:10002; rev:1;)
+alert tcp any any -> any 443 (msg:"netfilx.com access"; tls_sni; content:"netfilx.com"; fast_pattern; sid:10003; rev:1;)
+
+alert tcp any any -> any 80 (msg:"qt.io access"; content:"GET /"; content:"Host: "; content:"qt.io"; fast_pattern; sid:10004; rev:1;)
+alert tcp any any -> any 443 (msg:"qt.io access"; tls_sni; content:"qt.io"; fast_pattern; sid:10005; rev:1;)
+
+alert tcp any any -> any 443 (msg:"naver.com access"; tls_sni; content:"naver.com"; fast_pattern; sid:10006; rev:1;)
+
+alert tcp any any -> any 443 (msg:"google.com access"; tls_sni; content:"google.com"; fast_pattern; sid:10007; rev:1;)
+
+alert tcp any any -> any 443 (msg:"facebook.com access"; tls_sni; content:"facebook.com"; fast_pattern; sid:10008; rev:1;)
+
+alert tcp any any -> any 443 (msg:"youtube.com access"; tls_sni; content:"youtube.com"; fast_pattern; sid:10009; rev:1;)
+
+alert tcp any any -> any 443 (msg:"daum.net access"; tls_sni; content:"daum.net"; fast_pattern; sid:10010; rev:1;)
+
+alert tcp any any -> any 443 (msg:"acmicpc.net access"; tls_sni; content:"acmicpc.net"; fast_pattern; sid:10011; rev:1;)
+
+alert tcp any any -> any 80 (msg:"codeforces.com access"; content:"GET /"; content:"Host: "; content:"codeforces.com"; sid:10012; rev:1;)
+
+alert tcp any any -> any 443 (msg:"github.com access"; tls_sni; content:"github.com"; fast_pattern; sid:10013; rev:1;)
+
+alert tcp any any -> any 443 (msg:"twitch.tv access"; tls_sni; content:"twitch.tv"; fast_pattern; sid:10014; rev:1;)
+
+alert tcp any any -> any 443 (msg:"readthedocs.org access"; tls_sni; content:"readthedocs.org"; fast_pattern; sid:10015; rev:1;)
+
+alert tcp any any -> any 443 (msg:"tistory.com access"; tls_sni; content:"tistory.com"; fast_pattern; sid:10016; rev:1;)
+
+alert tcp any any -> any 80 (msg:"korea.ac.kr access"; content:"GET /"; content:"Host: "; content:"korea.ac.kr"; sid:10017; rev:1;)
+
+alert tcp any any -> any 443 (msg:"tetr.io access"; tls_sni; content:"tetr.io"; fast_pattern; sid:10018; rev:1;)
+
+alert tcp any any -> any 443 (msg:"lolesports.com access"; tls_sni; content:"lolesports.com"; fast_pattern; sid:10019; rev:1;)
+
+alert tcp any any -> any 80 (msg:"cplusplus.com access"; content:"GET /"; content:"Host: "; content:"cplusplus.com"; sid:10020; rev:1;)
+
+alert tcp any any -> any 443 (msg:"kobus.co.kr access"; tls_sni; content:"kobus.co.kr"; fast_pattern; sid:10021; rev:1;)
+
+alert tcp any any -> any 443 (msg:"gitlab.com access"; tls_sni; content:"gitlab.com"; fast_pattern; sid:10022; rev:1;)
+
+alert tcp any any -> any 443 (msg:"colorscripter.com access"; tls_sni; content:"colorscripter.com"; fast_pattern; sid:10023; rev:1;)
+
+alert tcp any any -> any 443 (msg:"ppy.sh access"; tls_sni; content:"ppy.sh"; fast_pattern; sid:10024; rev:1;)
+
+alert tcp any any -> any 443 (msg:"twitter.com access"; tls_sni; content:"twitter.com"; fast_pattern; sid:10025; rev:1;)
